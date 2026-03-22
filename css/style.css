@@ -18,6 +18,12 @@ h1,h2,h3,h4,h5,h6 {
     background-size: cover; */
     position: relative;
     overflow: hidden;
+    /* min-height: 100vh; */
+    height: 872.58px;
+    width: 100%;
+   
+   
+ 
 }
 nav .navbar-nav{
     column-gap: 55px;
@@ -38,7 +44,7 @@ nav .nav-item .nav-link{
     font-weight: 500;
     color: rgba(33, 40, 50,1);
       font-family: "Google Sans", sans-serif;
-      border: 1px solid transparent;
+      border: 1px solid rgba(33, 40, 50,1);
       transition: .5s;
       border-radius: 5px;
 }
@@ -53,27 +59,46 @@ nav .nav-button a:nth-child(3):hover {
     border: 1px solid transparent;
     cursor: pointer;
 }
+nav .nav-button a:nth-child(3) {
+    border: 1px solid transparent;
+}
 .yellow-image {
      position: absolute;
-    top: -20px;
-    right: -22px;
+     top: -308px;
+     right: -76px;
     /* background-color: red; */
-    width: 50%;
-    height: 1000px;
+    width:60%;
+    height: 100%;
     /* border-bottom-left-radius: 50%; */
      background: url(../Images/main.png);
-    background-position: center;
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
+    pointer-events: none;
+   
 
 }
+.banner img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    /* margin-top: 20px;
+    margin-left: -20px; */
+    /* margin-top: -50px; */
+}
+
+
 nav .container, .banner .container {
     position: relative;
     z-index: 1;
 }
-.banner {
-    /* padding-top: 180px; */
+
+.banner .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
 }
 .banner h3 {
      font-family: "Poppins", sans-serif;
@@ -90,8 +115,30 @@ nav .container, .banner .container {
 } 
 .banner .container h1 span {
     background: url(../Images/banner\ two.png);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 110% 10px;
+    padding-bottom: 5px;
+    padding: 0 15px;
+    z-index: 1;
 }
+.banner .banner-button .left-button {
+    padding: 19px 26px;
+    background-color:rgba(241, 165, 1,1) ;
+    display: inline-block;
+    color: rgba(255, 255, 255,1);
+    font-size: 18px;
+      font-family: "Google Sans", sans-serif;
+    font-weight:500 ;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0,0.25);
+    transition: .5s;
+}
+.banner .banner-button .left-button:hover {
+    background-color:rgba(255, 255, 255,1) ;
+    color: black;
+}
+
+
 /* nav css ends here */
