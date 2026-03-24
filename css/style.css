@@ -1,6 +1,6 @@
 /* common css starts here */
 * {
-    margin: 0px;
+    margin: 0px; 
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none !important;
@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
    
    
- 
+/* nav css starts here */
 }
 nav .navbar-nav{
     column-gap: 55px;
@@ -62,6 +62,7 @@ nav .nav-button a:nth-child(3):hover {
 nav .nav-button a:nth-child(3) {
     border: 1px solid transparent;
 }
+/* main css starts here */
 .yellow-image {
      position: absolute;
      top: -308px;
@@ -94,7 +95,8 @@ nav .container, .banner .container {
     position: relative;
     z-index: 1;
 }
-
+/* main css ends here */
+/* nav css ends here */
 .banner .container .row {
     display: flex;
     align-items: center;
@@ -106,6 +108,15 @@ nav .container, .banner .container {
      font-weight: 700;
      color: rgba(223, 105, 81,1);
      padding-top: 130px;
+}
+.banner p {
+    padding: 34px 0;
+    font-family: "Poppins", sans-serif;
+    font-size:16px ;
+    font-weight:500 ;
+    color: rgba(94, 98, 130,1);
+    width: 477px;
+
 }
 .banner .container h1 {
      font-family: "Volkhov", serif;
@@ -139,6 +150,94 @@ nav .container, .banner .container {
     background-color:rgba(255, 255, 255,1) ;
     color: black;
 }
+.banner .banner-button {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    column-gap: 44px;
+}
+.banner .banner-button .banner-icon-button {
+    /* width: 170px;
+    height: 60px; */
+ 
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0,0.25);
+   overflow: hidden;
+    background-color: rgba(255, 255, 255,1);
+   
+
+}
+.banner .banner-button .banner-icon-button .banner-icon-button-inside {
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    /* border-radius: 50%; */
+}
+.banner .banner-button .banner-icon-button .banner-icon-button-inside img {
+    width: 100%;
+    height: 100%;
+    
+}
+.banner .banner-button .banner-icon-button a {
+    /* padding-top:15px ; */
+    /* padding-bottom: 11px;
+    padding-left: 21px; */
+       padding: 19px 26px;
+    
+   
+      font-family: "Poppins", sans-serif;
+      font-size: 17px;
+      color: rgba(104, 109, 119,1);
+      font-weight: 500;
+      display: inline-block;
+}
+
+/* banner ends here */
+/* main ends here */
+/* services css starts here */
+.services {
+    background: url(../Images/services.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-top: 94px;
+    padding-left:148px ;
+    padding-right: ; */
+}
+.services p {
+    text-align: center;
+    font-size:18px ;
+    font-weight: 600;
+      font-family: "Poppins", sans-serif;
+    color: rgba(94, 98, 130,1);
+}
+.services h2 {
+    text-align: center;
+    font-size: 50px;
+    color: rgba(20, 24, 62,1);
+    font-weight:700 ;
+      font-family: "Volkhov", serif;
+}
+.services .card {
+ width: 100% !important;
+ border:  none !important;
+
+/* background-color: red; */
+ 
 
 
-/* nav css ends here */
+ 
+}
+.card .card-img-top {
+    width: 92px;
+   
+  
+   margin: 0 auto;
+}
+.card .card-body {
+    padding: 0px !important;
+}
